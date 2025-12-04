@@ -1,0 +1,25 @@
+.ingredient-btn {
+   margin-right: 40px;
+    margin-bottom: 20px ;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.ingredient-btn:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset; /* Внутренняя тень */
+    transform: translateY(1px);
+    outline: 1px solid black;
+    border-radius: 5px;
+}
+
+.ingredient-item__delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+    margin-right: 20px;
+}
+
+.ingredient-item__delete-btn:hover {
+  color: red;
+}

@@ -1,8 +1,14 @@
 import './App.css';
+import './components/Burger/Burger.css';
+import './components/Label/Label.css';
+import './components/Button/Button.css';
+import './components/IngredientsList/IngredientsList.css';
 import {useState} from 'react';
 import type {IIngredient, IIngredientState} from './types';
 import {INGREDIENTS} from './globalConstants.ts';
 import IngredientsList from './components/IngredientsList/IngredientsList.tsx';
+import AddBurgerIngredients
+  from './components/Burger/AddBurgerIngredients/AddBurgerIngredients.tsx';
 
 const App = () => {
      const [ingredients, setIngredients] = useState<IIngredientState[]>([
@@ -62,18 +68,10 @@ const App = () => {
               deleteIngredient={deleteCount}
           />
 
-
-            <div className="Burger">
-              <div className="BreadTop">
-                <div className="Seeds1"></div>
-                <div className="Seeds2"></div>
-              </div>
-              <div className="Salad"></div>
-              <div className="Cheese"></div>
-              <div className="Meat"></div>
-              <div className="BreadBottom"></div>
-              <p className='label-price'>Price: {totalPrice}</p>
-            </div>
+          <AddBurgerIngredients
+              ingredients={ingredients}
+              text={`Price: ${totalPrice}`}
+          />
         </div>
       </>
   )

@@ -1,0 +1,16 @@
+.label-price {
+    display: inline-block;
+    margin-top: 20px;
+    text-align:  center;
+}
+
+.ingredient-name {
+  margin-right: 80px;
+  font-size: 21px;
+  font-weight: bolder;
+}
+
+.ingredient-count {
+  margin-right: 20px;
+  font-size: 18px;
+}
